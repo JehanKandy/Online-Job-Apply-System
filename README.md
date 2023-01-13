@@ -9,17 +9,7 @@
   <h4> 02 January 2023</h4>
   
   - project Start
-  - lib/layouts/header.php
-  - lib/layouts/footer.php
-  - css/style.css
-  - lib/views/login.php
-  - js/script.js
-  - lib/views/reg.php
-  - lib/views/forget_pass.php
-  - lib/views/verify_otp.php
-  - lib/views/update_pass.php
-  - lib/views/waiting_user.php
-  - lib/function/config.php
+
 
 
 <h1>Developers</h1>
