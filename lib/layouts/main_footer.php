@@ -3,7 +3,7 @@
 <footer>
     <div class="footer-content">
         <div class="container">
-            <div class="footer-gird">
+            <div class="footer-grid">
                 <div class="footer-item1">Footer 1</div>
                 <div class="footer-item1">Footer 2</div>
                 <div class="footer-item1">Footer 3</div>
