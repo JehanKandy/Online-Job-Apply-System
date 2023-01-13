@@ -35,9 +35,16 @@
                 <div class="footer-item4">
                     <div class="title">Contact Us</div>
                     <div class="body">
-                        <i class="fas fa-mail-bulk"></i> &nbsp; jehankandy@gmail.com
+                        <i class="fas fa-mail-bulk"></i> &nbsp; jehankandy@gmail.com <br>
+                        <i class="fa fa-github" aria-hidden="true"></i> &nbsp; <a href="https://github.com/JehanKandy" target="_blank" style="color: white;">github.com/jehankandy</a><br>
+                        <i class="fas fa-mobile"></i> &nbsp; +94 711758851 <br>
+                        <i class="fas fa-search-location"></i> &nbsp; 29/3/A, Megodagama, Menikhinna.
                     </div>
                 </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-copy">
+                All rights reserved <i class="far fa-copyright"></i> &nbsp; Develop By <a href="https://github.com/JehanKandy" target="_blank" style="color: white;">JehanKandy</a>
             </div>
         </div>
     </div>
