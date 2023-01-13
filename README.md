@@ -12,6 +12,7 @@
   - index.php
   - lib/layouts/header.php
   - js/script.js
+  - css/style.css
 
 
 
