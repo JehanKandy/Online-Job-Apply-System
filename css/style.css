@@ -9,4 +9,17 @@
 
 .footer-content{
     margin: 100px 0 100px 0;
+    font-family: 'Overpass', sans-serif;
+}
+.footer-content .footer-grid{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d";
+    padding: 45 45 45 45;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
