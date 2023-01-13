@@ -23,3 +23,15 @@
     margin-top: 40px;
     margin-bottom: 20px;
 }
+.footer-item1{
+    grid-area: a;
+}
+.footer-item2{
+    grid-area: b;
+}
+.footer-item3{
+    grid-area: c;
+}
+.footer-item4{
+    grid-area: d;
+}
