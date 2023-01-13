@@ -1,7 +1,12 @@
-<?php include("lib/layouts/header.php"); ?>
-<link rel="stylesheet" href="css/style.css">
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Overpass&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
 
-    
+/*
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+*/
 
-<?php include("lib/layouts/main_footer.php"); ?>
-<script src="js/script.js"></script>
+.footer-content{
+    margin: 100px 0 100px 0;
+}
