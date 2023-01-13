@@ -62,6 +62,12 @@
 .footer-item4 .body{
     font-size: 18px;
 }
+.footer-hr{
+    border-top: 1px solid white;
+}
+.footer-copy{
+    text-align: center;
+}
 /* 
     ***************************************************************************************
 
