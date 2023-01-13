@@ -6,6 +6,9 @@
             <div class="footer-grid">
                 <div class="footer-item1">
                     <div class="title">ABC Jobs</div>
+                    <div class="body">
+                        The ABC Job System is Develop for educational purposes only 
+                    </div>
                 </div>
                 <div class="footer-item2">
                     <div class="title">Useful Links</div>
