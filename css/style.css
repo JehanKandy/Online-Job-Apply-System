@@ -8,8 +8,10 @@
 */
 
 .footer-content{
-    margin: 100px 0 100px 0;
+    padding: 100px 0 100px 0;
     font-family: 'Overpass', sans-serif;
+    background: -webkit-linear-gradient(rgba(14, 13, 13, 0.815), rgba(31, 31, 31, 0.815)), url(../images/footer.jpg);
+    color: white;
 }
 .footer-content .footer-grid{
     display: grid;
@@ -34,4 +36,46 @@
 }
 .footer-item4{
     grid-area: d;
+}
+
+/* 
+    ***************************************************************************************
+
+                             commen laptop screen and small screens
+
+                                            769px - 1400px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
+
+}
+
+/* 
+    ***************************************************************************************
+
+                                        iPads, Tablets
+
+                                        481px — 768px
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
+
+}
+
+/* 
+    ***************************************************************************************
+
+                                     commen mobile screen
+
+                                            320x480
+
+    ***************************************************************************************
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
 }
