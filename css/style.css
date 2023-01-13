@@ -37,6 +37,9 @@
 .footer-item4{
     grid-area: d;
 }
+.footer-item1, .footer-item2, .footer-item3, .footer-item4 .title{
+    text-align: center;
+}
 
 /* 
     ***************************************************************************************
