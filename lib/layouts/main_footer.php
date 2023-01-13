@@ -34,6 +34,9 @@
                 </div>
                 <div class="footer-item4">
                     <div class="title">Contact Us</div>
+                    <div class="body">
+                        <i class="fas fa-mail-bulk"></i> &nbsp; jehankandy@gmail.com
+                    </div>
                 </div>
             </div>
         </div>
