@@ -4,10 +4,18 @@
     <div class="footer-content">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-item1">Footer 1</div>
-                <div class="footer-item2">Footer 2</div>
-                <div class="footer-item3">Footer 3</div>
-                <div class="footer-item4">Footer 4</div>
+                <div class="footer-item1">
+                    <div class="title">ABC Jobs</div>
+                </div>
+                <div class="footer-item2">
+                    <div class="title">Useful Links</div>
+                </div>
+                <div class="footer-item3">
+                    <div class="title">Our Services</div>
+                </div>
+                <div class="footer-item4">
+                    <div class="title">Contact Us</div>
+                </div>
             </div>
         </div>
     </div>
