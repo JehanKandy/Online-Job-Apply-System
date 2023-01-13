@@ -56,8 +56,11 @@
     font-size: 18px;
     margin: 10px 0 10px 0;
 }
-.footer-item2, .footer-item3, ul li a{
+.footer-item2  ul li a, .footer-item3 ul li a{
     color: white;
+}
+.footer-item4 .body{
+    font-size: 18px;
 }
 /* 
     ***************************************************************************************
