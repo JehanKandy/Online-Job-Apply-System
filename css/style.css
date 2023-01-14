@@ -104,6 +104,15 @@
     height: 40px;
     padding: 5px 0 5px 0;
 }
+.login-card{
+    margin: 50px 100px 50px 100px;
+}
+.login-card-body{
+    padding: 40px;
+}
+.form-input{
+    height: 45px;
+}
 
 /* 
     ***************************************************************************************
