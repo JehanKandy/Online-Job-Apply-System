@@ -3,8 +3,11 @@
         $server = "localhost";
         $user = "root";
         $pass = "";
-        $da_name = "job_apply";
+        $db_name = "job_apply";
 
-        $con = 
+        $con = mysqli_connect($server,$user,$pass,$db_name);
+
+        $result = (!$con)? "Connection Lost" : $con;
+        echo $result;
     }
 ?>
