@@ -1,40 +1,36 @@
-function validate_login(){
-    var usern = document.forms['login_form']['usern'].value;
-    var userpass = document.forms['login_form']['passn'].value;
-    var usernameText = document.getElementById('username');
-    var passText = document.getElementById('password');
-    var userError = document.getElementById('usernError');
-    var passError = document.getElementById('passError');
-    var usernameInput = document.getElementById('usern');
-    var passInput = document.getElementById('passn');
+<link rel="stylesheet" href="../../css/style.css">
+<?php include("../layouts/header.php"); ?>
+<?php include("../layouts/login_nav.php"); ?>
 
-    if(usern == "" || usern == null){
-        usernameText.style.color = "red";
-        usernameInput.style.borderColor = "red";
-        userError.style.color = "red";
-        userError.innerHTML = "Username Cannot be Empty...!";
-        return false;
-    }
+<div class="container">
+    <div class="card login-card">
+    <div class="card-header">
+        <i class="fas fa-user-plus"></i> &nbsp; Register
+    </div>
+    <div class="card-body login-card-body">
+        <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="reg_form" onsubmit="return validate_reg(); ">
+            <p class="form-text" id="regusername">Username : </p>
+            <input type="text" name="userName" id="regusern" class="form-control form-input">
+            <p id="usernError"></p>
 
-    if(userpass == "" || userpass == null){
-        passText.style.color = "red";
-        passInput.style.borderColor = "red";
-        passError.style.color = "red";
-        passError.innerHTML = "Password Cannot be Empty...!"
-        return false;
-    }
-}
+            <p class="form-text" id="regemail">Email : </p>
+            <input type="email" name="useremail" id="emailuser" class="form-control form-input">
+            <p id="emailError"></p>
 
+            <p class="form-text" id="regpassword">Password : </p>
+            <input type="password" name="passWord" id="regpassn" class="form-control form-input">
+            <p id="passError"></p>
 
-function validate_reg(){
-    var regUser = document.forms['reg_form']['regusern'].value;
-    var regEmail = document.forms['reg_form']['emailuser'].value;
-    var pass = document.forms['reg_form']['regpassn'].value;
-    var cpass = document.forms['reg_form']['regcpassn'].value;
+            <p class="form-text" id="regcpassword">Confirm Password : </p>
+            <input type="password" name="cpassWord" id="regcpassn" class="form-control form-input">
+            <p id="cpassError"></p>
 
-    if(regUser == "" || regUser == null){
-        document.getElementById('regusername').style.color = "red";
-        document.getElementById('regusern').style.borderColor = "red";
-        return false;
-    }
-}
+            <input type="submit" value="Register" class="btn btn-primary login-btn-form" name="register">
+        </form>
+        <p>Already have an Account ? <a href="login.php" style="color: rgb(123, 8, 231);">Login</a></p>
+    </div>
+    </div>
+</div>
+
+<?php include("../layouts/footer_page.php"); ?>
+<script src="../../js/script.js"></script>
