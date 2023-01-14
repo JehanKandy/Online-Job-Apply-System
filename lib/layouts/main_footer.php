@@ -43,7 +43,7 @@
             </div>
             <hr class="footer-hr">
             <div class="footer-copy">
-                All rights reserved 2021 - 2023 <i class="far fa-copyright"></i> &nbsp; Develop By <a href="https://github.com/JehanKandy" target="_blank" style="color: white;">JehanKandy</a>
+                All rights reserved 2021 - 2023 <i class="far fa-copyright"></i>JK Jobs &nbsp; Develop By <a href="https://github.com/JehanKandy" target="_blank" style="color: white;">JehanKandy</a>
             </div>
         </div>
     </div>
