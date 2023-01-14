@@ -62,4 +62,23 @@ function validate_reg(){
         document.getElementById('cpassError').style.color = "red";
         return false;
     }
+
+    var passlength = pass.length;
+    if(passlength < 6){
+        document.getElementById('regpassword').style.color = "red";
+        document.getElementById('regpassn').style.borderColor = "red";
+        document.getElementById('passError').innerHTML = "password must be at least 6 characters"
+        document.getElementById('passError').style.color = "red";
+        return false;
+    }
+    if(pass != cpass){
+        document.getElementById('regcpassword').style.color = "red";
+        document.getElementById('regcpassn').style.borderColor = "red";
+        document.getElementById('cpassError').innerHTML = "Passwords Not Match....!"
+        document.getElementById('cpassError').style.color = "red";
+        document.getElementById('regpassword').style.color = "red";
+        document.getElementById('regpassn').style.borderColor = "red";
+        document.getElementById('passError').innerHTML = "Passwords Not Match....!"
+        document.getElementById('passError').style.color = "red";
+    }
 }
