@@ -21,6 +21,7 @@
   - lib/function/config.php
   - lib/function/function.php
   - lib/layouts/login_nav.php
+  - lib/views/login.php
   - index.php (UPDATE)
   - css/style.css (UPDATE)
 
