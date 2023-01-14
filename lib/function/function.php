@@ -45,6 +45,9 @@
     
     function login_user($username, $pass){
         $con = Connection();
+
+        $check_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass_user = '$pass'";
+        
     }
 
 ?>
