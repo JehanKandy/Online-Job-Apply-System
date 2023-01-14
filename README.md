@@ -26,6 +26,7 @@
   - lib/layouts/footer_page.php
   - index.php (UPDATE)
   - css/style.css (UPDATE)
+  - js/script.js (UPDATE)
 
 
 
