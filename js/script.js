@@ -24,3 +24,27 @@ function validate_login(){
         return false;
     }
 }
+
+
+function validate_reg(){
+    var regUser = document.forms['reg_form']['regusern'].value;
+    var regEmail = document.forms['reg_form']['emailuser'].value;
+    var pass = document.forms['reg_form']['regpassn'].value;
+    var cpass = document.forms['reg_form']['regcpassn'].value;
+
+    if(regUser == "" || regUser == null){
+        document.getElementById('regusername').style.color = "red";
+        document.getElementById('regusern').style.borderColor = "red";
+        document.getElementById('usernError').innerHTML = "Username Cannot be Empty..!";
+        document.getElementById('usernError').style.color = "red";
+        return false;
+    }
+
+    if(regEmail == "" || regEmail == null){
+        document.getElementById('regemail').style.color = "red";
+        document.getElementById('emailuser').style.borderColor = "red";
+        document.getElementById('emailError').innerHTML = "Email Cannot be Empty...!";
+        document.getElementById('emailError').style.color = "red";
+        return false;
+    }
+}
