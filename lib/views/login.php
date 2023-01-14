@@ -9,7 +9,7 @@
         <i class="fas fa-user-alt"></i> &nbsp; Login
     </div>
     <div class="card-body login-card-body">
-        <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="login_form" onsubmit="returm validate_login(); ">
+        <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="login_form" onsubmit="return validate_login(); ">
             <p class="form-text" id="username">Username : </p>
             <input type="text" name="userName" id="usern" class="form-control form-input">
             <p class="usernError"></p>
