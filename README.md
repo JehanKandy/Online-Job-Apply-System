@@ -23,6 +23,7 @@
   - lib/layouts/login_nav.php
   - lib/views/login.php
   - lib/views/reg.php
+  - lib/layouts/footer_page.php
   - index.php (UPDATE)
   - css/style.css (UPDATE)
 
