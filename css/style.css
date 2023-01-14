@@ -70,9 +70,17 @@
 }
 .nav-content{
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: black;
     color: white;
+}
+.nav-content .title{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.nav-content .login-nav{
+    margin-left: 100%;
+    margin-top: -25px;
 }
 /* 
     ***************************************************************************************
@@ -156,5 +164,9 @@
     .footer-item1  .title, .footer-item2  .title, .footer-item3  .title, .footer-item4 .title{
         text-align: center;
         font-size: 30px;
+    }
+    .nav-content .login-nav{
+        margin-left: 95%;
+        margin-top: -25px;
     }
 }
