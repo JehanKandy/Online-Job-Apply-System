@@ -47,4 +47,19 @@ function validate_reg(){
         document.getElementById('emailError').style.color = "red";
         return false;
     }
+
+    if(pass == "" || pass == null){
+        document.getElementById('regpassword').style.color = "red";
+        document.getElementById('regpassn').style.borderColor = "red";
+        document.getElementById('passError').innerHTML = "Password Cannot be Empty...!"
+        document.getElementById('passError').style.color = "red";
+        return false;
+    }
+    if(cpass == "" || cpass == null){
+        document.getElementById('regcpassword').style.color = "red";
+        document.getElementById('regcpassn').style.borderColor = "red";
+        document.getElementById('cpassError').innerHTML = "Confirm Password Cannot be Empty....!"
+        document.getElementById('cpassError').style.color = "red";
+        return false;
+    }
 }
