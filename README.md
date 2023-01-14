@@ -15,7 +15,7 @@
   - css/style.css
   - lib/layouts/main_footer.php
   
-    <h4> 14 January 2023</h4>
+  <h4> 14 January 2023</h4>
     
   - lib/layouts/nav_bar.php
   - lib/function/config.php
