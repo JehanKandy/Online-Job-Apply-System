@@ -5,6 +5,8 @@
 
     USE FTP\Connection;
 
-    
+    function reguser($username, $email, $pass){
+        $con = Connection();
+    }    
 
 ?>
