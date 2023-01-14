@@ -1,10 +1,4 @@
 <link rel="stylesheet" href="../../css/style.css">
-<style>
-    a{
-        display: inline;
-        position: relative;
-    }
-</style>
 
 <nav>
     <div class="nav-content">
