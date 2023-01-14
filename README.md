@@ -17,8 +17,8 @@
   
     <h4> 14 January 2023</h4>
 
-  - index.php
-  - css/style.css
+  - index.php (UPDATE)
+  - css/style.css (UPDATE)
 
 
 
