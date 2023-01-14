@@ -8,6 +8,13 @@
         <i class="fas fa-user-plus"></i> &nbsp; Register
     </div>
     <div class="card-body login-card-body">
+        <?php 
+            if(isset($_POST['register'])){
+                $result = reguser($_POST['userName'], $_POST['useremail'], md5($_POST['passWord']));
+                echo $result;
+            }
+        ?>
+
         <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="reg_form" onsubmit="return validate_reg(); ">
             <p class="form-text" id="regusername">Username : </p>
             <input type="text" name="userName" id="regusern" class="form-control form-input">
