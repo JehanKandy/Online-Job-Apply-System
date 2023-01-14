@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Overpass&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
 
+
 /*
     font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Overpass', sans-serif;
@@ -95,6 +96,11 @@
 .login-btn:hover{
     background-color: rgb(123, 8, 231);
     cursor: pointer;
+}
+.footer-page{
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    border-top: 1px solid rgb(207, 207, 207);
 }
 
 /* 
