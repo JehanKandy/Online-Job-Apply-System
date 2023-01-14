@@ -80,5 +80,6 @@ function validate_reg(){
         document.getElementById('regpassn').style.borderColor = "red";
         document.getElementById('passError').innerHTML = "Passwords Not Match....!"
         document.getElementById('passError').style.color = "red";
+        return false;
     }
 }
