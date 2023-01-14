@@ -33,7 +33,7 @@
             }
         }
         else{
-            $insert_data = "INSERT INTO user_tbl(username,email,pass_user,is_active,is_pending,join_date)VALUES('$username','$email','$pass',0,1,NOW())";
+            $insert_data = "INSERT INTO user_tbl(username,email,pass_user,user_type,is_active,is_pending,join_date)VALUES('$username','$email','$pass','user',0,1,NOW())";
             $insert_data_result = mysqli_query($con, $insert_data);
 
             if(!$insert_data_result){
@@ -64,7 +64,7 @@
         $check_user_row = mysqli_fetch_assoc($check_user_result);
 
         if($check_user_nor > 0){
-            
+            if($check_user_row['user'])
         }
         else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
