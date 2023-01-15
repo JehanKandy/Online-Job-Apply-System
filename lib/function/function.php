@@ -129,10 +129,29 @@
                 $otp_no = rand(10000,99999);
                 $new_otp = md5($otp_no);
 
-                $insert_data = "INSERT INTO pass_reset_tbl(username,email,otp_no,get_date)VALUES()";
+                $recever = $email;
+                $subject = "Password Reset";
+                $body = "OTP For Resent Password";
+                $body .= " use the OTP to update Password : " .$otp_no;
+                $sender = "From:jehankandy@gmail.com";
+
+                if(mail($recever,$subject,$body,$sender)){
+                    $insert_data = "INSERT INTO pass_reset_tbl(username,email,otp_no,get_date)VALUES('$username','$email','$new_otp',NOW())";
+                    $insert_data_result = mysqli_query($con, $insert_data);
+                    
+                    if(!$insert_data_result){
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong> </strong>Can not Process the Task..!
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                                </button>
+                        </div>"; 
+                    }
+                }
+               
             }else{
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong> </strong>Can not Process the Task..!
+                        <strong> User Error </strong>User Does Not exist..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
