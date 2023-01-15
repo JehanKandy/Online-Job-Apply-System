@@ -7,7 +7,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <i class="fas fa-scanner-keyboard"></i>
+                <i class="fas fa-key"></i> Verify OTP
             </div>
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
