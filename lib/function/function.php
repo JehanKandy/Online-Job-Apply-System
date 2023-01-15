@@ -58,31 +58,17 @@
     function login_user($username, $pass){
         $con = Connection();
 
-        $check_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass_user = '$pass'";
-        $check_user_result = mysqli_query($con, $check_user);
-        $check_user_nor = mysqli_num_rows($check_user_result);
-        $check_user_row = mysqli_fetch_assoc($check_user_result);
+        $check_user_is_panding = "SELECT * FROM user_tbl WHERE username = '$username' && pass_user = '$pass' && is_active = 0 && is_pending = 1";
+        $check_user_is_panding_result = mysqli_query($con, $check_user_is_panding);
+        $check_user_is_panding_nor = mysqli_num_rows($check_user_is_panding_result);
 
-        if($check_user_nor > 0){
-            if($check_user_row['user_type'] == "admin"){
-                setcookie('login',$check_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_user_row['email'];
-                header("location:../routes/admin.php");
-            }
-            if($check_user_row['user_type'] == "user"){
-                setcookie('login',$check_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_user_row['email'];
-                header("location:../routes/user.php");
-            }            
+        $_SESSION['userName'] = $username;
+
+        if($check_user_is_panding_nor > 0){
+            header("location:waiting_user.php");
         }
-        else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>User Error</strong>User Doesn't exists..!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-            </div>";
-        }
+
+
 
     }
 
