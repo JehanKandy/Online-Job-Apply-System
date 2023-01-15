@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="../../css/style.css">
 <?php include("../layouts/login_nav.php"); ?>
 
+<?php 
+    if(empty($_SESSION['OTP'])){
+        header("location:login.php");
+    }
+?>
 
 <div class="verify-otp">
     <div class="container">
