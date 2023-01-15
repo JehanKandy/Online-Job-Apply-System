@@ -36,6 +36,7 @@
   - lib/function/function.php (UPDATE)
   - css/style.css (UPDATE)
   - lib/views/login.php (UPDATE)
+  - js/script.js (UPDATE)
  
 
 
