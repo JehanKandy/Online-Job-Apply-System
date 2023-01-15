@@ -107,6 +107,10 @@ function validate_userOpt(){
     var otp = document.forms['veryfy_otp']['otpInput'].value;
 
     if(otp == "" || otp == null){
+        document.getElementById('otp_no').style.color = "red";
+        document.getElementById('otpInput').style.borderColor = "red";
+        document.getElementById('otpError').innerHTML = "OTP can not be empty...!";
+        document.getElementById('otpError').style.color = "red";
         return false;
     }
 }
