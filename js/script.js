@@ -86,7 +86,7 @@ function validate_reg(){
 
 function otp_validate(){
     var username = document.forms['request_otp']['passunser'].value;
-    var userEmail = document.forms['request_otp']['passemail'].values;
+    var userEmail = document.forms['request_otp']['emailPass'].value;
 
     if(username == "" || username == null){
         document.getElementById('username').style.color = "red";
@@ -97,7 +97,7 @@ function otp_validate(){
     }
     if(userEmail == "" || userEmail == null){
         document.getElementById('email').style.color = "red";
-        document.getElementById('passemail').style.borderColor = "red";
+        document.getElementById('emailPass').style.borderColor = "red";
         document.getElementById('passError').innerHTML = "Email Cannot Be Empty..!"
         document.getElementById('passError').style.color = "red";
         return false;
