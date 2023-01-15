@@ -29,6 +29,8 @@
   - js/script.js (UPDATE)
     
   <h4> 15 January 2023</h4>
+  
+  - lib/views/waiting_user.php
     
 
 
