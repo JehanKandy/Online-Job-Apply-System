@@ -12,7 +12,8 @@
                 <?php 
                     include("../function/function.php");
                     if(isset($_POST['request_otp'])){
-                        $result = 
+                        $result = forget_pass($_POST['userName'], $_POST['passEmail']);
+                        echo $result;
                     }
                 ?>
 
