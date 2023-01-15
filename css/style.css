@@ -113,7 +113,14 @@
 .form-input{
     height: 45px;
 }
-
+.login-btn-form{
+    margin-top: 25px;
+    height: 50px;
+    width: 25%;
+}
+.waiting-content{
+    margin: 100px 0 100px 0;
+}
 /* 
     ***************************************************************************************
 
