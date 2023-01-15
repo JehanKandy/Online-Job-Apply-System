@@ -9,9 +9,15 @@
                 <i class="fas fa-key"></i> &nbsp; Forget Password
             </div>
             <div class="card-body login-card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+                    <p class="form-text" id="username">Username : </p>
+                    <input type="text" name="userName" id="passunser" class="form-control form-input">
+                    <p id="usernError"></p>
+
+                    <p class="form-text" id="email">Email : </p>
+                    <input type="email" name="passEmail" id="passemail" class="form-control form-input">
+                    <p id="passError"></p> 
+                </form>
             </div>
         </div>
     </div>
