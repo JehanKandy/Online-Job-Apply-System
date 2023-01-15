@@ -13,6 +13,8 @@
                 <h5>Hi.. <?php waiting_username();?> </h5>
 
                 <p>Your account approval is still processing</p>
+                
+                <a href="login.php"><button class="btn btn-primary">Back to Login</button></a>
             </div>
         </div>
     </div>
