@@ -83,3 +83,12 @@ function validate_reg(){
         return false;
     }
 }
+
+function otp_validate(){
+    var username = document.forms['request_otp']['passunser'].value;
+    var userEmail = document.forms['request_otp']['passemail'].values;
+
+    if(username == "" || username == null){
+        document.getElementById('username').
+    }
+}
