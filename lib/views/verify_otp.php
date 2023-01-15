@@ -1,9 +1,20 @@
+<?php include("../layouts/header.php"); ?>
 <link rel="stylesheet" href="../../css/style.css">
 <?php include("../layouts/login_nav.php"); ?>
 
+
 <div class="verify-otp">
     <div class="container">
-        
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-scanner-keyboard"></i>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
     </div>
 </div>
 
