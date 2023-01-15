@@ -111,9 +111,12 @@
 
     function waiting_username(){
         $con = Connection();
-        
+
         $username = strval($_SESSION['userName']);
         echo $username;
     }
 
+    function forget_pass(){
+        $con = Connection();
+    }
 ?>
