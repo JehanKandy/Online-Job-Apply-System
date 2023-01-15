@@ -9,13 +9,23 @@
         <i class="fas fa-user-alt"></i> &nbsp; Login
     </div>
     <div class="card-body login-card-body">
+        <?php 
+            include("../function/function.php");
+            if(isset($_POST['login'])){
+                $result = login_user($_POST['userName'], md5($_POST['passWord']));
+                echo $result;
+            }
+        
+        ?>
+
         <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="login_form" onsubmit="return validate_login(); ">
             <p class="form-text" id="username">Username : </p>
             <input type="text" name="userName" id="usern" class="form-control form-input">
-            <p class="usernError"></p>
+            <p id="usernError"></p>
 
             <p class="form-text" id="password">Password : </p>
             <input type="password" name="passWord" id="passn" class="form-control form-input">
+            <p id="passError"></p>
 
             <input type="submit" value="Login" class="btn btn-primary login-btn-form" name="login">
         </form>
