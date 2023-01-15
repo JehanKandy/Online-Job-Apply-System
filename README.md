@@ -31,7 +31,9 @@
   <h4> 15 January 2023</h4>
   
   - lib/views/waiting_user.php
-  - lib/function/function.php
+  - lib/function/function.php (UPDATE)
+  - css/style.css (UPDATE)
+  - lib/views/login.php (UPDATE)
 
 
 
