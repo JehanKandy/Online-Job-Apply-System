@@ -67,6 +67,11 @@
         if($check_user_is_panding_nor > 0){
             header("location:waiting_user.php");
         }
+        else{
+            $check_deactrive_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass_user = '$pass' && is_active = 0 && is_pending = 0";
+            $check_deactrive_user_result = mysqli_query($con, $check_deactrive_user);
+            $check_deactrive_user_nor = mysqli_num_rows($check_deactrive_user_result);
+        }
 
 
 
