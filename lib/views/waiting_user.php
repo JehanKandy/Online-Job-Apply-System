@@ -4,9 +4,9 @@
 
 <div class="waiting-content">
     <div class="container">
-        <div class="card">
+        <div class="card waiting-card">
             <div class="card-header">
-                Waiting User
+                <i class="fas fa-user-clock"></i> Waiting User
             </div>
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
