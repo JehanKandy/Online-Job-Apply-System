@@ -71,6 +71,32 @@
             $check_deactrive_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass_user = '$pass' && is_active = 0 && is_pending = 0";
             $check_deactrive_user_result = mysqli_query($con, $check_deactrive_user);
             $check_deactrive_user_nor = mysqli_num_rows($check_deactrive_user_result);
+
+            if($check_deactrive_user_nor > 0){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error </strong>Account Deactive
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>"; 
+            }else{
+                $check_active_user = "SELECT * FROM user_tbl WHERE username = '$username' &&  pass_user = '$pass' && is_active = 1 && is_pending = 0";
+                $check_active_user_result = mysqli_query($con, $check_active_user);
+                $check_active_user_nor = mysqli_num_rows($check_active_user_result);
+                $check_active_user_row = mysqli_fetch_assoc($check_active_user_result);
+
+                if($check_active_user_nor > 0){
+
+                }
+                else{
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Process Error </strong>Can not Process the Task..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>"; 
+                }
+            }
         }
 
 
