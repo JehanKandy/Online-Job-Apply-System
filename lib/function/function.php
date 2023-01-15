@@ -125,7 +125,7 @@
         $check_user_nor = mysqli_num_rows($check_user_result);
 
         if($check_user_nor > 0){
-            if($check_user_nor['username'] == $username && $check_user_nor['email'] == $email){
+            if($check_user_row['username'] == $username && $check_user_row['email'] == $email){
                 $otp_no = rand(10000,99999);
                 $new_otp = md5($otp_no);
 
