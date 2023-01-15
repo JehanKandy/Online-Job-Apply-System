@@ -4,7 +4,7 @@
 
 <div class="waiting-content">
     <div class="container">
-        
+        hi
     </div>
 </div>
 
