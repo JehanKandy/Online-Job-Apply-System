@@ -116,7 +116,7 @@
         echo $username;
     }
 
-    function forget_pass(){
+    function forget_pass($username,$email){
         $con = Connection();
     }
 ?>
