@@ -89,6 +89,7 @@ function otp_validate(){
     var userEmail = document.forms['request_otp']['passemail'].values;
 
     if(username == "" || username == null){
-        document.getElementById('username').
+        document.getElementById('username').style.color = "red";
+        return false;
     }
 }
