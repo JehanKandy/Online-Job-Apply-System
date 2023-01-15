@@ -102,4 +102,11 @@ function otp_validate(){
         document.getElementById('passError').style.color = "red";
         return false;
     } 
+} 
+function validate_userOpt(){
+    var otp = document.forms['veryfy_otp']['otpInput'].value;
+
+    if(otp == "" || otp == null){
+        return false;
+    }
 }
