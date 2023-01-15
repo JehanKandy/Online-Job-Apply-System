@@ -126,8 +126,25 @@
 
         if($check_user_nor > 0){
             if($check_user_nor['username'] == $username && $check_user_nor['email'] == $email){
-                
+                $otp_no = rand(10000,99999);
+                $new_otp = md5($otp_no);
+
+                $insert_data = "INSERT INTO pass_reset_tbl(username,email,otp_no,get_date)VALUES()";
+            }else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong> </strong>Can not Process the Task..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>"; 
             }
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Process Error </strong>Can not Process the Task..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>"; 
         }
     }
 ?>
