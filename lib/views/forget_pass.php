@@ -17,6 +17,8 @@
                     <p class="form-text" id="email">Email : </p>
                     <input type="email" name="passEmail" id="passemail" class="form-control form-input">
                     <p id="passError"></p> 
+                    
+                    <input type="submit" value="Request OTP" class="btn btn-primary login-btn-form" name="request_otp">
                 </form>
             </div>
         </div>
