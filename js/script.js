@@ -95,4 +95,11 @@ function otp_validate(){
         document.getElementById('usernError').style.color = "red";
         return false;
     }
+    if(userEmail == "" || userEmail == null){
+        document.getElementById('email').style.color = "red";
+        document.getElementById('passemail').style.borderColor = "red";
+        document.getElementById('passError').innerHTML = "Email Cannot Be Empty..!"
+        document.getElementById('passError').style.color = "red";
+        return false;
+    } 
 }
