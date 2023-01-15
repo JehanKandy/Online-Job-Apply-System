@@ -11,6 +11,8 @@
             </div>
             <div class="card-body">
                 <h5>Hi.. <?php waiting_username();?> </h5>
+
+                <p>Your account approval is still processing</p>
             </div>
         </div>
     </div>
