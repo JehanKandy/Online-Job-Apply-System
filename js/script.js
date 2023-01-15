@@ -90,6 +90,9 @@ function otp_validate(){
 
     if(username == "" || username == null){
         document.getElementById('username').style.color = "red";
+        document.getElementById('passunser').style.borderColor = "red";
+        document.getElementById('usernError').innerHTML = "Username Cannot be Empty..!";
+        document.getElementById('usernError').style.color = "red";
         return false;
     }
 }
