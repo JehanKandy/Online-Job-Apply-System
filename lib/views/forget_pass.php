@@ -9,7 +9,14 @@
                 <i class="fas fa-key"></i> &nbsp; Forget Password
             </div>
             <div class="card-body login-card-body">
-                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+                <?php 
+                    include("../function/function.php");
+                    if(isset($_POST['request_otp'])){
+                        $result = 
+                    }
+                ?>
+
+                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="request_otp" onsubmit="return otp_validate();">
                     <p class="form-text" id="username">Username : </p>
                     <input type="text" name="userName" id="passunser" class="form-control form-input">
                     <p id="usernError"></p>
