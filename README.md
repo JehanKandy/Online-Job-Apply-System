@@ -33,6 +33,7 @@
   - lib/views/waiting_user.php
   - lib/views/logout.php
   - lib/views/forget_pass.php
+  - lib/views/
   - lib/function/function.php (UPDATE)
   - css/style.css (UPDATE)
   - lib/views/login.php (UPDATE)
