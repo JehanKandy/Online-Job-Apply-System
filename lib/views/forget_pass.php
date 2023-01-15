@@ -6,7 +6,7 @@
     <div class="container">
         <div class="card login-card">
             <div class="card-header">
-                Featured
+                <i class="fas fa-key"></i> &nbsp; Forget Password
             </div>
             <div class="card-body login-card-body">
                 <h5 class="card-title">Special title treatment</h5>
