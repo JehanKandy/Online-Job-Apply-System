@@ -41,14 +41,8 @@
  
   <h4> 15 January 2023</h4>
   
-  - lib/views/waiting_user.php
-  - lib/views/logout.php
-  - lib/views/forget_pass.php
-  - lib/views/verify_otp.php
-  - lib/function/function.php (UPDATE)
-  - css/style.css (UPDATE)
-  - lib/views/login.php (UPDATE)
-  - js/script.js (UPDATE)
+  - docs/home_content.php
+  - index.php (UPDATE)
  
 
 
