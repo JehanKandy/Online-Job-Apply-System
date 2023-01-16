@@ -38,7 +38,7 @@
   - lib/views/login.php (UPDATE)
   - js/script.js (UPDATE)
  
-  <h4> 15 January 2023</h4>
+  <h4> 16 January 2023</h4>
   
   - docs/home_content.php
   - index.php (UPDATE)
