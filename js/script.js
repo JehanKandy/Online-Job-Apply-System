@@ -156,6 +156,7 @@ function valide_updatePass(){
         document.getElementById('updatePasscp').style.color = "red";
         document.getElementById('updatePasscpass').style.borderColor = "red";
         document.getElementById('updatePcpassError').innerHTML = "Confirm Password Cannot be empty...!"
+        document.getElementById('updatePcpassError').style.color = "red";
         return false;
     }
 }
