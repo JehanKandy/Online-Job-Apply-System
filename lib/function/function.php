@@ -147,7 +147,7 @@
                                 </button>
                         </div>"; 
                     }else{
-                        setcookie('Otp',$check_user_row['email'],time()+60*2,'/');
+                        setcookie('Otp',$check_user_row['email'],time()+60*5,'/');
                         $_SESSION['OTP'] = $check_user_row['email'];
                         header("location:verify_otp.php"); 
                     }
@@ -169,5 +169,9 @@
                     </button>
             </div>"; 
         }
+    }
+
+    function verify_otp(){
+        $con = Connection();
     }
 ?>
