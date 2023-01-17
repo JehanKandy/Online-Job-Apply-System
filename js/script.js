@@ -147,6 +147,8 @@ function valide_updatePass(){
     if(newpasslength < 6){
         document.getElementById('updatePassp').style.color = "red";
         document.getElementById('updatePasspass').style.borderColor = "red";
-        
+        document.getElementById('updatePpassError').innerHTML = "New Password must be at least 6 characters";
+        document.getElementById('updatePpassError').style.color = "red";
+        return false;
     }
 }
