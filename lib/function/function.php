@@ -221,14 +221,14 @@
         $passU_email = strval($_SESSION['OTP']);
         if($passU_email == $email){
             if($select_user_data_nor > 0){
-                if($username == $select_user_data_row['username'] ){
+                if($username != $select_user_data_row['username'] ){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>Username Error </strong>Username Doesn't exist..!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
                     </div>";
-                }elseif($email == $select_user_data_row['email']){
+                }elseif($email != $select_user_data_row['email']){
                     return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>Email Error </strong>Email Doesn't exist..!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -241,12 +241,12 @@
 
                     if(!$update_user_tbl_result){
                         return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                <strong>Process Error </strong>Cannot Process Task..!
+                                <strong>Process Error </strong>Cannot Process Task1..!
                                 <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                                 <span aria-hidden='true'>&times;</span>
                                 </button>
                         </div>";
-                        
+
                     }elseif($update_user_tbl_result){
                         header("location:logout.php");
                     }
@@ -262,7 +262,7 @@
             }
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Process Error </strong>Cannot Process Task..!
+                    <strong>Process Error </strong>Cannot Process Task2..!
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                     <span aria-hidden='true'>&times;</span>
                     </button>
