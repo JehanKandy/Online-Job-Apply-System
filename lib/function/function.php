@@ -233,6 +233,8 @@
                         <span aria-hidden='true'>&times;</span>
                         </button>
                 </div>";
+            }else{
+                $update_user_tbl = "UPDATE user_tbl SET ";
             }
         }
     }
