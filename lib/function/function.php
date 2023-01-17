@@ -246,6 +246,8 @@
                                 <span aria-hidden='true'>&times;</span>
                                 </button>
                         </div>";
+                    }elseif($update_user_tbl_result){
+                        header("location:logout.php");
                     }
                 }
             }
