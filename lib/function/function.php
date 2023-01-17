@@ -6,7 +6,6 @@
     session_start();
 
 
-
     function reguser($username, $email, $pass){
         $con = Connection();
 
@@ -235,7 +234,8 @@
                         </button>
                 </div>";
             }else{
-                $update_user_tbl = "UPDATE user_tbl SET ";
+                $update_user_tbl = "UPDATE user_tbl SET pass_user = '$new_pass' WHERE username = '$username' && email = '$email'";
+                $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
             }
         }
     }
