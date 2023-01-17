@@ -48,10 +48,7 @@
   
   - lib/views/verify_otp.php
   - js/script.js (UPDATE)
-  - lib/function/function.php
- 
-
-
+  - lib/function/function.php (UPDATE)
 
 
 <h1>Developers</h1>
