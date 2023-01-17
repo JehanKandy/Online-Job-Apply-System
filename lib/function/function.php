@@ -183,7 +183,8 @@
 
         if($select_otp_nor > 0){
             if($email == $select_otp_row['email'] && $opt_no == $select_otp_row['otp_no']){
-                $delete_otp = "DELETE FROM pass_reset_tbl WHERE email = '$email' && otp_no == '$opt_no'";
+
+                $delete_otp = "DELETE FROM pass_reset_tbl WHERE email = '$email' && otp_no = '$opt_no'";
                 $delete_otp_result = mysqli_query($con, $delete_otp);
 
                 if(!$delete_otp_result){
