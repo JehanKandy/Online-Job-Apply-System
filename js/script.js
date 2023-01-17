@@ -160,6 +160,8 @@ function valide_updatePass(){
         return false;
     }
     if(passnew != cpassnew){
+        document.getElementById('updatePassp').style.color = "red";
+        document.getElementById('updatePasscp').style.color = "red";
         return false;
     }
 }
