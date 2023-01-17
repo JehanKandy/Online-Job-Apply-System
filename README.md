@@ -47,6 +47,7 @@
   <h4> 17 January 2023</h4>
   
   - lib/views/verify_otp.php
+  - js/script.js
  
 
 
