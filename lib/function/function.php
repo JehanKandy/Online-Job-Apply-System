@@ -182,9 +182,9 @@
         $email = strval($_SESSION['OTP']);
 
         if($select_otp_nor > 0){
-            if($email == $select_otp_row['email']){
-
-            }elseif($email != $select_otp_row['email']){
+            if($email == $select_otp_row['email'] && $opt_no == $select_otp_row['otp_no']){
+                
+            }elseif($email != $select_otp_row['email'] && $opt_no != $select_otp_row['otp_no']){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Process Error </strong>Can not Process the Task..!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
