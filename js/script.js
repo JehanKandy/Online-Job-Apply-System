@@ -162,6 +162,10 @@ function valide_updatePass(){
     if(passnew != cpassnew){
         document.getElementById('updatePassp').style.color = "red";
         document.getElementById('updatePasscp').style.color = "red";
+        document.getElementById('updatePpassError').style.color = "red";
+        document.getElementById('updatePcpassError').style.color = "red";
+        document.getElementById('updatePcpassError').innerHTML = "Passwords not Match...!";
+        document.getElementById('updatePpassError').innerHTML = "Passwords not Match...!";
         return false;
     }
 }
