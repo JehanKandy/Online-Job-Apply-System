@@ -25,6 +25,9 @@
 
                     <p class="form-text" id="updatePasscp">Confirm New Password : </p>
                     <input type="password" name="new_cpass" id="updatePasscpass" class="form-control form-input">
+                    <p id="updatePcpassError"></p>
+
+                    
                 </form>
             </div>
         </div>
