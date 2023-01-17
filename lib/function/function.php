@@ -218,27 +218,43 @@
         $select_user_data_nor = mysqli_num_rows($select_user_data_result);
         $select_user_data_row = mysqli_fetch_assoc($select_user_data_result);
 
-        $email = strval($_SESSION['OTP']);
-
-        if($select_user_data_nor > 0){
-            if($username == $select_user_data_row['username'] ){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Username Error </strong>Username Doesn't exist..!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                </div>";
-            }elseif($email == $select_user_data_row['email']){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error </strong>Email Doesn't exist..!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                </div>";
-            }else{
-                $update_user_tbl = "UPDATE user_tbl SET pass_user = '$new_pass' WHERE username = '$username' && email = '$email'";
-                $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+        $passU_email = strval($_SESSION['OTP']);
+        if($passU_email == $email){
+            if($select_user_data_nor > 0){
+                if($username == $select_user_data_row['username'] ){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Username Error </strong>Username Doesn't exist..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }elseif($email == $select_user_data_row['email']){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Email Error </strong>Email Doesn't exist..!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                    </div>";
+                }else{
+                    $update_user_tbl = "UPDATE user_tbl SET pass_user = '$new_pass' WHERE username = '$username' && email = '$email'";
+                    $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+                }
             }
+            else{
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error </strong>Users not exist..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";  
+            }
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Process Error </strong>Cannot Process Task..!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+            </div>";  
         }
     }
 ?>
