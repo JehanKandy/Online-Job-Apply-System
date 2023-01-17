@@ -238,6 +238,15 @@
                 }else{
                     $update_user_tbl = "UPDATE user_tbl SET pass_user = '$new_pass' WHERE username = '$username' && email = '$email'";
                     $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+
+                    if(!$update_user_tbl_result){
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>Process Error </strong>Cannot Process Task..!
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                                </button>
+                        </div>";
+                    }
                 }
             }
             else{
