@@ -10,7 +10,9 @@
                 <i class="fas fa-key"></i> Update Password
             </div>
             <div class="card-body login-card-body">
-
+                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="update_pass" onsubmit="return valide_updatePass();">
+                    
+                </form>
             </div>
         </div>
     </div>
