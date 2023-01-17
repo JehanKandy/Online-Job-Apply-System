@@ -48,6 +48,7 @@
   
   - lib/views/verify_otp.php
   - js/script.js (UPDATE)
+  - lib/function/function.php
  
 
 
