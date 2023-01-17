@@ -17,7 +17,7 @@
             </div>
             <div class="card-body login-card-body">
                 <?php 
-                    if(isset($_POST)){
+                    if(isset($_POST['update_pass'])){
                         $result = update_pass($_POST['username'], $_POST['email'], md5($_POST['new_pass']));
                         echo $result;
                     }
