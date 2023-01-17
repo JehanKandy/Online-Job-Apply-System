@@ -6,6 +6,7 @@
     session_start();
 
 
+
     function reguser($username, $email, $pass){
         $con = Connection();
 
