@@ -46,6 +46,7 @@
   
   <h4> 17 January 2023</h4>
   
+  - lib/views/update_pass.php
   - lib/views/verify_otp.php
   - js/script.js (UPDATE)
   - lib/function/function.php (UPDATE)
