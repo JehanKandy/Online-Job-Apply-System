@@ -114,3 +114,10 @@ function validate_userOtp(){
         return false;
     }
 }
+
+function valide_updatePass(){
+    var Passuser = document.forms['update_pass']['updatePassUser'].value;
+    var PassEmail = document.forms['update_pass']['updatePassEmail'].value;
+    var passnew = document.forms['update_pass']['updatePasspass'].value;
+    var cpassnew = document.forms['update_pass']['updatePasscpass'].value;
+}
