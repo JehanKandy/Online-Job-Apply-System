@@ -194,6 +194,9 @@
                             </button>
                     </div>"; 
                 }
+                elseif($delete_otp_result){
+                    header("location:update_pass.php");
+                }
 
             }elseif($email != $select_otp_row['email'] || $opt_no != $select_otp_row['otp_no']){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
