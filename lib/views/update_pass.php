@@ -19,9 +19,11 @@
                     <input type="email" name="email" id="updatePassEmail" class="form-control form-input">
                     <p id="updatePemailError"></p>
 
-                    <p class="form-text" id="updatePassp">New Password</p>
+                    <p class="form-text" id="updatePassp">New Password :</p>
                     <input type="password" name="new_pass" id="updatePasspass" class="form-control">
                     <p id="updatePpassError"></p>
+
+                    <p class="form-text" id="updatePasscp">Confirm New Password : </p>
                 </form>
             </div>
         </div>
