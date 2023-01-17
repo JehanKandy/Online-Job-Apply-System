@@ -21,6 +21,7 @@
 
                     <p class="form-text" id="updatePassp">New Password</p>
                     <input type="password" name="new_pass" id="updatePasspass" class="form-control">
+                    <p id="updatePpassError"></p>
                 </form>
             </div>
         </div>
