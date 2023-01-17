@@ -210,7 +210,7 @@
         }
     }
 
-    function update_pass(){
+    function update_pass($username, $email, $new_pass, $new_cpass){
         $con = Connection();
     }
 ?>
