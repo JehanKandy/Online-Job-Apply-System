@@ -144,7 +144,9 @@ function valide_updatePass(){
     }
 
     var newpasslength = passnew.length;
-    if(newpasslength > 6){
-
+    if(newpasslength < 6){
+        document.getElementById('updatePassp').style.color = "red";
+        document.getElementById('updatePasspass').style.borderColor = "red";
+        
     }
 }
