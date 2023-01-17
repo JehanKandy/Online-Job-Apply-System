@@ -208,6 +208,9 @@
                 </div>"; 
             }
         }
+    }
 
+    function update_pass(){
+        $con = Connection();
     }
 ?>
