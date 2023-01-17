@@ -217,5 +217,11 @@
         $select_user_data_result = mysqli_query($con, $select_user_data);
         $select_user_data_nor = mysqli_num_rows($select_user_data_result);
         $select_user_data_row = mysqli_fetch_assoc($select_user_data_result);
+
+        if($select_user_data_nor > 0){
+            if($username == $select_user_data_row['username'] ){
+
+            }
+        }
     }
 ?>
