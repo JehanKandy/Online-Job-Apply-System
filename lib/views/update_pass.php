@@ -11,7 +11,12 @@
             </div>
             <div class="card-body login-card-body">
                 <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="update_pass" onsubmit="return valide_updatePass();">
-                    
+                    <p class="form-text" id="updatePassU">Username : </p>
+                    <input type="text" name="username" id="updatePassUser" class="form-control form-input">
+                    <p id="updatePuserError"></p>
+
+                    <p class="form-text" id="updatePassE">Email : </p>
+                    <input type="email" name="" id="updatePassEmail" class="form-control form-input">
                 </form>
             </div>
         </div>
