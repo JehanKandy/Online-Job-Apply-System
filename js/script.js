@@ -135,4 +135,11 @@ function valide_updatePass(){
         document.getElementById('updatePemailError').style.color = "red";
         return false;
     }
+    if(passnew == "" || passnew == null){
+        document.getElementById('updatePassp').style.color = "red";
+        document.getElementById('updatePasspass').style.borderColor = "red";
+        document.getElementById('updatePpassError').innerHTML = "Password Cannot be empty..!";
+        document.getElementById('updatePpassError').style.color = "red";
+        return false;
+    }
 }
