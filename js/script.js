@@ -67,7 +67,7 @@ function validate_reg(){
     if(passlength < 6){
         document.getElementById('regpassword').style.color = "red";
         document.getElementById('regpassn').style.borderColor = "red";
-        document.getElementById('passError').innerHTML = "password must be at least 6 characters"
+        document.getElementById('passError').innerHTML = "Password must be at least 6 characters"
         document.getElementById('passError').style.color = "red";
         return false;
     }
@@ -141,5 +141,10 @@ function valide_updatePass(){
         document.getElementById('updatePpassError').innerHTML = "Password Cannot be empty..!";
         document.getElementById('updatePpassError').style.color = "red";
         return false;
+    }
+
+    var newpasslength = passnew.length;
+    if(newpasslength > 6){
+
     }
 }
