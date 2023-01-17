@@ -151,4 +151,11 @@ function valide_updatePass(){
         document.getElementById('updatePpassError').style.color = "red";
         return false;
     }
+
+    if(cpassnew == "" || cpassnew == null){
+        document.getElementById('updatePasscp').style.color = "red";
+        document.getElementById('updatePasscpass').style.borderColor = "red";
+        document.getElementById('updatePcpassError').innerHTML = "Confirm Password Cannot be empty...!"
+        return false;
+    }
 }
