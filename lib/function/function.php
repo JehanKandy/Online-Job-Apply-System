@@ -212,5 +212,10 @@
 
     function update_pass($username, $email, $new_pass, $new_cpass){
         $con = Connection();
+
+        $select_user_data = "SELECT * FROM user_tbl";
+        $select_user_data_result = mysqli_query($con, $select_user_data);
+        $select_user_data_nor = mysqli_num_rows($select_user_data_result);
+        $select_user_data_row = mysqli_fetch_assoc($select_user_data_result);
     }
 ?>
