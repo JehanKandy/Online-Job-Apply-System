@@ -3,6 +3,12 @@
 <?php include("../layouts/header.php"); ?>
 <?php include("../layouts/login_nav.php"); ?>
 
+<?php 
+    if(empty($_SESSION['OTP'])){
+        header("location:login.php");        
+    }
+?>
+
 <div class="update-pass-content">
     <div class="container">
         <div class="card login-card">
