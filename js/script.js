@@ -120,4 +120,8 @@ function valide_updatePass(){
     var PassEmail = document.forms['update_pass']['updatePassEmail'].value;
     var passnew = document.forms['update_pass']['updatePasspass'].value;
     var cpassnew = document.forms['update_pass']['updatePasscpass'].value;
+
+    if(Passuser == "" || Passuser == null){
+        return false;
+    }
 }
