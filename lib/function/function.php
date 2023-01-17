@@ -210,7 +210,7 @@
         }
     }
 
-    function update_pass($username, $email, $new_pass, $new_cpass){
+    function update_pass($username, $email, $new_pass){
         $con = Connection();
 
         $select_user_data = "SELECT * FROM user_tbl";
