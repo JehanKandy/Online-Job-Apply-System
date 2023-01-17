@@ -220,7 +220,19 @@
 
         if($select_user_data_nor > 0){
             if($username == $select_user_data_row['username'] ){
-
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Username Error </strong>Username Doesn't exist..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
+            }elseif($email == $select_user_data_row['email']){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Email Error </strong>Email Doesn't exist..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>";
             }
         }
     }
