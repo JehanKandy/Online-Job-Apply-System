@@ -16,7 +16,11 @@
                     <p id="updatePuserError"></p>
 
                     <p class="form-text" id="updatePassE">Email : </p>
-                    <input type="email" name="" id="updatePassEmail" class="form-control form-input">
+                    <input type="email" name="email" id="updatePassEmail" class="form-control form-input">
+                    <p id="updatePemailError"></p>
+
+                    <p class="form-text" id="updatePassp">New Password</p>
+                    <input type="password" name="new_pass" id="updatePasspass" class="form-control">
                 </form>
             </div>
         </div>
