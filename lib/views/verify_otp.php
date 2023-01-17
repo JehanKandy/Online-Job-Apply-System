@@ -3,8 +3,10 @@
 <?php include("../layouts/login_nav.php"); ?>
 
 <?php 
+    include("../function/function.php");
+
     if(empty($_SESSION['OTP'])){
-        header("location:login.php");
+        header("location:login.php");        
     }
 ?>
 
