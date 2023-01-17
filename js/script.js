@@ -103,7 +103,7 @@ function otp_validate(){
         return false;
     } 
 } 
-function validate_userOpt(){
+function validate_userOtp(){
     var otp = document.forms['veryfy_otp']['otpInput'].value;
 
     if(otp == "" || otp == null){
