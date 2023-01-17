@@ -128,4 +128,11 @@ function valide_updatePass(){
         document.getElementById('updatePuserError').style.color = "red";
         return false;
     }
+    if(PassEmail == "" || PassEmail == null){
+        document.getElementById('updatePassE').style.color = "red";
+        document.getElementById('updatePassEmail').style.borderColor = "red";
+        document.getElementById('updatePemailError').innerHTML = "Email Cannot be Empty..!";
+        document.getElementById('updatePemailError').style.color = "red";
+        return false;
+    }
 }
