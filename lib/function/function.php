@@ -185,7 +185,12 @@
             if($email == $select_otp_row['email']){
 
             }elseif($email != $select_otp_row['email']){
-
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Process Error </strong>Can not Process the Task..!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                </div>"; 
             }
         }
 
