@@ -27,7 +27,7 @@
                     <input type="password" name="new_cpass" id="updatePasscpass" class="form-control form-input">
                     <p id="updatePcpassError"></p>
 
-                    
+                    <input type="submit" value="Update Password" name="update_pass" class="btn btn-success login-btn-form">
                 </form>
             </div>
         </div>
