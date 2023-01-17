@@ -122,6 +122,10 @@ function valide_updatePass(){
     var cpassnew = document.forms['update_pass']['updatePasscpass'].value;
 
     if(Passuser == "" || Passuser == null){
+        document.getElementById('updatePassU').style.color = "red";
+        document.getElementById('updatePassUser').style.borderColor = "red";
+        document.getElementById('updatePuserError').innerHTML = "Username Cannot be empty..!";
+        document.getElementById('updatePuserError').style.color = "red";
         return false;
     }
 }
