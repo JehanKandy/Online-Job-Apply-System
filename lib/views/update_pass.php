@@ -20,10 +20,11 @@
                     <p id="updatePemailError"></p>
 
                     <p class="form-text" id="updatePassp">New Password :</p>
-                    <input type="password" name="new_pass" id="updatePasspass" class="form-control">
+                    <input type="password" name="new_pass" id="updatePasspass" class="form-control form-input">
                     <p id="updatePpassError"></p>
 
                     <p class="form-text" id="updatePasscp">Confirm New Password : </p>
+                    <input type="password" name="new_cpass" id="updatePasscpass" class="form-control form-input">
                 </form>
             </div>
         </div>
