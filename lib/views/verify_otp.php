@@ -17,7 +17,7 @@
                 <i class="fas fa-key"></i> Verify OTP
             </div>
             <div class="card-body">
-                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="veryfy_otp" onsubmit="return validate_userOpt(); ">
+                <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST" name="veryfy_otp" onsubmit="return validate_userOtp(); ">
                     <p class="form-text" id="otp_no">Enter OTP : </p>
                     <input type="number" name="otp_no" id="otpInput" class="form-control form-input">
                     <p id="otpError"></p>
