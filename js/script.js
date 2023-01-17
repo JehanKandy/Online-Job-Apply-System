@@ -159,4 +159,7 @@ function valide_updatePass(){
         document.getElementById('updatePcpassError').style.color = "red";
         return false;
     }
+    if(passnew != cpassnew){
+        return false;
+    }
 }
