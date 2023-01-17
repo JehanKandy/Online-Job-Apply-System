@@ -171,7 +171,7 @@
         }
     }
 
-    function verify_otp(){
+    function verify_otp($opt_no){
         $con = Connection();
     }
 ?>
