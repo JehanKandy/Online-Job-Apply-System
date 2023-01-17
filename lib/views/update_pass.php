@@ -13,6 +13,7 @@
                 <?php 
                     if(isset($_POST)){
                         $result = update_pass($_POST['username'], $_POST['email'], md5($_POST['new_pass']));
+                        echo $result;
                     }
                 ?>
 
