@@ -173,5 +173,21 @@
 
     function verify_otp($opt_no){
         $con = Connection();
+
+        $select_otp = "SELECT * FROM pass_reset_tbl";
+        $select_otp_result = mysqli_query($con, $select_otp);
+        $select_otp_row = mysqli_fetch_assoc($select_otp_result);
+        $select_otp_nor = mysqli_num_rows($select_otp_result);
+
+        $email = strval($_SESSION['OTP']);
+
+        if($select_otp_nor > 0){
+            if($email == $select_otp_row['email']){
+
+            }elseif($email != $select_otp_row['email']){
+
+            }
+        }
+
     }
 ?>
