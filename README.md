@@ -50,6 +50,7 @@
   - lib/views/verify_otp.php (UPDATE)
   - js/script.js (UPDATE)
   - lib/function/function.php (UPDATE)
+  - css/style.css (UPDATE)
 
 
 <h1>Developers</h1>
